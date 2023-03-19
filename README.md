@@ -43,6 +43,22 @@ In addition,  install the following packages (or go `pip install -r requirements
 
 - The hard_set() method allows the user to input the weight and bias values directly, which is useful for debugging.
 
+### Class Model
+- This is a Python class named Model which represents a neural network model. 
+- The Model class is responsible for defining the structure and behavior of our neural network model. It contains the following attributes:
+
+    - input_size: an integer representing the number of features in the input layer.
+    - output_size: an integer representing the number of features in the output layer.
+    - hidden_layer_sizes: a list of integers representing the number of neurons in each of the hidden layers.
+    - layers: a list of Layer objects representing the layers of our neural network model.
+    - batch_size: an integer representing the size of the mini-batches we will use for training.
+
+The Model class also has the following methods:
+
+    - __init__: a constructor method that initializes the Model object with the given input parameters. It creates the Layer objects for each layer of the network and adds them to the layers list.
+    - forward: a method that performs the forward pass through the layers of the neural network. It takes an input tensor x as its input, and returns the output tensor of the final layer.
+   - backward: a method that performs the backward pass through the layers of the neural network. It takes an input tensor x, the target output tensor y, and the predicted output tensor y_pred as its inputs. It computes the gradients of the loss function with respect to the weights and biases of each layer in the network, and stores these gradients in the d_W and d_b attributes of each Layer object.
+   - predict: a method that makes predictions using the trained neural network. It takes an input tensor Xtest as its input, and returns either the predicted class labels (if probab=False) or the predicted probabilities for each class (if probab=True).
 ## train.py
 
 The train.py script is used to train the neural network using the optimizer class with various options that can be specified using command-line arguments. Here is a description of the available options. The deafult values are set according to what worked best in the wandb sweeps.
