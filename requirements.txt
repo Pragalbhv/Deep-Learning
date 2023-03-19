@@ -1,0 +1,7 @@
+numpy
+tqdm
+wandb
+matplotlib
+copy
+argparse
+keras
