@@ -5,7 +5,7 @@ We implement a feed forward neural network and use verious flavors of the gradie
 
 We run upto 450 different configurations and track them all using wandb, we then find correlations with the best featuires and tune further searches to attempt to reach as high an accuracy as possible:-
 
-# Libraries used:
+### Libraries used:
 - copy was used to obtain a deep copy of the class Model
 - tqdm was used to track time left in a particular run
 - wandb was used to log all the runs with their metrics
@@ -28,6 +28,20 @@ In addition,  install the following packages (or go `pip install -r requirements
 - copy
 - argparse
 - keras
+
+## arch.py
+### class layer
+- The code block provides a class called "layer", which is used to create a layer object for neural networks.
+
+- The layer class has several arguments for initialization, including input_size, output_size, activation, batch_size, and type_ (initialization type).
+
+- The input_size argument represents the number of neurons in the previous layer, while the output_size represents the number of neurons in the current layer. The activation argument specifies the activation function for the layer (default is the sigmoid function), and batch_size is the fixed size of batches used for broadcasting (default is 2).
+
+- The type_ argument determines the initialization method for the layer weights. There are four initialization methods available: random, Xavier/Glorot, and He/Kaiming.
+
+- The forward() method computes the forward pass in the layer by multiplying the layer weights with the input and adding biases, followed by applying the activation function.
+
+- The hard_set() method allows the user to input the weight and bias values directly, which is useful for debugging.
 
 ## train.py
 
