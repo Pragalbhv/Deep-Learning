@@ -48,9 +48,13 @@ In addition,  install the following packages (or go `pip install -r requirements
 - The Model class is responsible for defining the structure and behavior of our neural network model. It contains the following attributes:
 
     - input_size: an integer representing the number of features in the input layer.
+    
     - output_size: an integer representing the number of features in the output layer.
+    
     - hidden_layer_sizes: a list of integers representing the number of neurons in each of the hidden layers.
+    
     - layers: a list of Layer objects representing the layers of our neural network model.
+    
     - batch_size: an integer representing the size of the mini-batches we will use for training.
 
 The Model class also has the following methods:
