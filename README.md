@@ -1,5 +1,7 @@
 # Deep Learning Assignment 1: Neural Network development
 
+##### By Pragalbh Vashishtha
+
 This is assignment number 1 in the course, Fundamentals of Deep Learning CS6910 by Prof. Mitesh Khapra.
 We implement a feed forward neural network and use verious flavors of the gradient descent algorithm such as momentum, nesterov, RMSprop, Adam, NAdam  and compare  them. The datasets chosen are fashion-mnist and mnist, which have images of size 28x28 and 10 classes. We o not use any convolution,. Instead, we would like to see how a simple 'dense' neural network could perform.
 
