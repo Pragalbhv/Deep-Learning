@@ -7,6 +7,9 @@ We implement a feed forward neural network and use verious flavors of the gradie
 
 We run upto 450 different configurations and track them all using wandb, we then find correlations with the best features and tune further searches to attempt to reach as high an accuracy as possible:-
 
+Report can be accessed here:- https://wandb.ai/pragalbh/DL-Assign1/reports/-CS6910-Assignment-1--VmlldzozODE3MDAy
+
+
 ### Libraries used:
 - copy was used to obtain a deep copy of the class Model
 - tqdm was used to track time left in a particular run
@@ -157,7 +160,8 @@ These are the optimizers implemented
 
 - NAdam: This function implemets the NAdam optimizer. Like Adam, NAdam keeps track of the first and second moments of the gradients, but it also incorporates the Nesterov 'look ahead' idea to update the weights. NAdam also includes bias correction in its update rule, which helps to correct the bias that could be introduced in the initial iterations 
 
-
+### Class dependencies:-
+![classes.png](https://github.com/pragalbhv/Deep-Learning/blob/main/classes.png?raw=true)
 
 
 ## train.py
